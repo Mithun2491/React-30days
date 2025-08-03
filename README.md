@@ -1,69 +1,79 @@
-# React + TypeScript + Vite
+⏰ Time Tracker App
+A beautiful and beginner-friendly Time Tracker app built with React, Vite, and TypeScript. Users can add daily activities and see how their time is distributed using a colorful Pie Chart powered by Chart.js.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+🚀 Features
+📋 Add daily activities with time in minutes
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📊 Visualize time using an interactive Pie Chart
 
-## Expanding the ESLint configuration
+✨ Styled with Tailwind CSS and ShadCN-inspired UI
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+🔁 Real-time UI updates
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+💡 Clean and reusable components
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+⚙️ Built with React + Vite + TypeScript
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+📦 Tech Stack
+Tech	Purpose
+React	UI framework
+Vite	Fast dev server and build tool
+TypeScript	Type safety and better tooling
+Tailwind CSS	Utility-first styling
+Chart.js	Chart rendering
+React Chart.js	React wrapper for Chart.js
+ShadCN UI	UI design inspiration
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+🗂️ Folder Structure
+bash
+Copy
+Edit
+src/
+├── components/
+│   ├── TimeInputForm.tsx     # Form for user input
+│   └── TimeChart.tsx         # Chart component
+├── pages/
+│   └── Home.tsx              # Main logic & layout
+├── App.tsx                   # Root component
+├── main.tsx                  # Entry point
+└── index.css                 # Tailwind styles
+🛠️ Installation & Setup
+1. Clone the repository
+bash
+Copy
+Edit
+git clone https://github.com/your-username/time-tracker.git
+cd time-tracker
+2. Install dependencies
+bash
+Copy
+Edit
+npm install
+3. Start the development server
+bash
+Copy
+Edit
+npm run dev
+Open your browser and navigate to:
+http://localhost:5173
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+🧪 Available Scripts
+npm run dev - Start dev server
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+npm run build - Build for production
+
+npm run preview - Preview production build
+
+🔮 Upcoming Features (Day 4+)
+🔥 Firebase integration for storing user data
+
+📱 Responsive mobile layout
+
+🌗 Dark mode toggle
+
+✏️ Edit & delete activities
+
+🧹 Clear all functionality
+
+📈 Activity history over time
