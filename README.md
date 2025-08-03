@@ -25,40 +25,37 @@ Chart.js	Chart rendering
 React Chart.js	React wrapper for Chart.js
 ShadCN UI	UI design inspiration
 
-🗂️ Folder Structure
-bash
-Copy
-Edit
-src/
-├── components/
-│   ├── TimeInputForm.tsx     # Form for user input
-│   └── TimeChart.tsx         # Chart component
-├── pages/
-│   └── Home.tsx              # Main logic & layout
-├── App.tsx                   # Root component
-├── main.tsx                  # Entry point
-└── index.css                 # Tailwind styles
+
 🛠️ Installation & Setup
+
 1. Clone the repository
 bash
 Copy
 Edit
 git clone https://github.com/your-username/time-tracker.git
+
 cd time-tracker
-2. Install dependencies
+
+3. Install dependencies
 bash
 Copy
 Edit
 npm install
-3. Start the development server
+
+5. Start the development server
+6. 
 bash
 Copy
 Edit
 npm run dev
+
+
 Open your browser and navigate to:
+
 http://localhost:5173
 
 🧪 Available Scripts
+
 npm run dev - Start dev server
 
 npm run build - Build for production
